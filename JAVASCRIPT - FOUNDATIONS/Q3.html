@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>
+                    <h3>1st Number: </h3>
+                </th>
+                <th>
+                    <input type="text" id ='1'>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3>2nd Number: </h3>
+                </th>
+                <th>
+                    <input type="text" id ='2'>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <button onclick="Mul()">Multiply</button>
+                </th>
+                <th>
+                    <button onclick="Div()">Divide</button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                   <label>The Result is: </label>
+                </th>
+                <th>
+                    <label id="result"></label>
+                </th>
+            </tr>
+        </table>
+        <script>
+            function Mul(){
+                document.getElementById('result').innerHTML = $('#1').val() * $('#2').val()
+            };
+            function Div(){
+                document.getElementById('result').innerHTML = $('#1').val() / $('#2').val()
+            };
+        </script>
+    </body>
+</html>
