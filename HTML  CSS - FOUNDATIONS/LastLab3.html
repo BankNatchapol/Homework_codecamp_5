@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            justify-content: center;
+            background-color: rgb(62, 56, 97);
+        }
+        #head{
+            display: flex;
+            margin-top: -40px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: -10px;
+            text-align: center;
+            justify-content: center;
+            border: 1px solid black;
+            width:615px;
+        }
+        .dropbtn {
+            background-color: rgb(45, 41, 65);
+            color: rgb(201, 201, 201);
+            padding: 16px;
+            border: 1px solid rgba(0, 0, 0, 0.116);
+            border: none;
+            cursor: pointer;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color:rgb(62, 56, 97);
+        }
+        .h{
+            cursor: pointer;
+            color:rgb(201, 201, 201);
+            border:  1px solid rgba(0, 0, 0, 0.116);
+            background-color: rgb(45, 41, 65);
+        }
+        .h:hover{
+            background-color: rgb(62, 56, 97);
+        }
+        #i{
+            padding-top: 7px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: rgb(45, 41, 65);
+            border: 1px solid rgba(0, 0, 0, 0.116);
+        }
+        #ad{
+            justify-content: center;
+            align-items:center;
+            background-color: rgb(45, 41, 65);
+            width: 1100px;
+            height: 270px;
+            padding-top: 25px;
+           
+            margin: 30px auto 10px auto;
+        }
+        #Now{
+            justify-content: center;
+            align-items:center;
+            display: grid;
+            background-color: rgb(58, 53, 80);
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        #Now li div {
+            padding-top: 80px;
+            background-color: rgb(58, 53, 80);
+            height: 100px;
+           
+        }
+        #Now li div a{
+            text-decoration: none;
+            color:white;
+        }
+        #side{
+            justify-content: center;
+            align-items:center;
+            display: grid;
+            background-color: rgb(58, 53, 80);
+            width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        li{
+            background-color: rgb(58, 53, 80);
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <img style="width:900px;margin-top:-10px;" src="https://ptcdn.info/doodle/2019/5d07273900d01f33da0f618c_ohiil4txoh.png">
+    <div id="head">
+        <button class="h" href="#">หน้าแรก</button>
+        <div class="dropdown">
+            <button class="dropbtn">เลือกห้อง</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <button class="h" href="#">แท็ก</button>
+        <button class="h" href="#">กิจกรรม</button>
+        <div class="dropdown">
+            <button class="dropbtn">อื่นๆ</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div id="i">
+            <input placeholder="ค้นหา " style="height:30px;background-color:rgb(71, 64, 112);border:none">
+        </div>
+        <button class="h" href="#">ตั้งกระทู้</button>
+        <button class="h" href="#">สมัครสมาชิก</button>
+    </div>
+    <div id="ad">
+        <img src="https://ptcdn.info/home/8362481055e2ab9796b90d_c2634b1d5ffc9d9e444db71b6b29e3d3_photo.jpg">
+        <img src="https://ptcdn.info/home/16075902725e33b08050c9d_c345497f7598a452e06856cb03d09a21_photo.jpg">
+        <img src="https://ptcdn.info/home/493545425e424690013aa_08c2b5225145844d9c89c88022bd406f_photo.jpg">
+    </div>
+    <div style="display:flex;width:1100px;margin-left:auto;margin-right:auto">
+    <ul id="Now" style="flex:2;background-color:rgb(58, 53, 80);margin-right:10px">
+        <li>
+            <div>
+                <a href="#"> วิเคราะห์ 2ด้อมสุดเดือดเจ้าของอันดับหนึ่งผลด่วนกับอันดับสี่ GE2 </a>
+            </div>
+            
+        </li>
+        <li>
+            <div>
+                <a href="#"> Pantip ชวนลงทะเบียนรับผลิตภัณฑ์ Sulwhasoo Bloomstay Vitalizing 200 รางวัล </a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a href="#"> มาเดาตอนจบ crash landing on you กันเถอะ ! มีสปอยล์! </a>
+            </div>
+        </li>
+        <li>
+            <div>
+                <a href="#"> สรุปตัวละครใน ทุ่งเสน่หา โดย กู้ด ฟีลลิ่ง </a>
+            </div>
+        </li>
+    </ul>
+    <ul id="Now" style="flex:1">
+        <li>
+            <div>
+                <button href="#">ความรักวัยรุ่น</button>
+            </div>
+            
+        </li>
+        <li>
+            <div>
+                <button href="#">ปัญหาความรัก</button>
+            </div>
+        </li>
+        <li>
+            <div>
+                <button href="#">ชีวิตวัยรุ่น</button>
+            </div>
+        </li>
+        <li>
+            <div>
+                <button href="#">หุ้น</button>
+            </div>
+        </li>
+        
+    </ul>
+    </div>
+</body>
+</html>
