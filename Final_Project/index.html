@@ -8,7 +8,8 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <style>
     html {
       scroll-behavior: smooth;
@@ -18,18 +19,20 @@
       justify-content: center;
       text-align: center;
     }
+
     :root {
       --color1: #f7f7f700;
       --color2: rgb(3, 32, 84);
       --color3: rgb(192, 247, 248);
       --color4: rgb(212, 244, 245);
       --color5: rgb(17, 53, 119);
+      font-family: 'Montserrat', sans-serif;
     }
 
     .navbar {
       position: fixed;
       width: 100%;
-
+      z-index:10;
       background-color: var(--color1) !important;
     }
 
@@ -44,12 +47,172 @@
 
     #profilePic {
       border-radius: 50%;
-      width:200px;
+      width: 200px;
       box-shadow: 5px 5px 10px 5px grey;
-      top:100px;
+      top: 100px;
       position: relative;
-      top:-600px;
+      top: -600px;
     }
+
+    #headName {
+      position: relative;
+      background-color: rgba(255, 255, 255, 0.322);
+      width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 4px;
+      top: -550px;
+      color: rgb(0, 0, 0);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 45px;
+    }
+
+    #headName p+p {
+      font-size: 16px;
+      color: aliceblue;
+    }
+
+    #contact {
+      position: relative;
+      background-color: rgba(255, 255, 255, 0);
+      top: -420px;
+      
+    }
+    #contact a:hover{
+      filter: brightness(120%);
+      
+    }
+
+    #contact a img{
+      width:80px;
+      margin-right: 30px;
+      margin-left: 30px;
+      transition: transform .2s;
+    }
+    #contact a img:hover{
+      transform: scale(1.3);
+    }
+    #basicInfo1{
+      display: flex;
+      width: 80%;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+     
+      margin-top: -300px;
+      padding-top: 200px;
+      
+    }
+    
+    #basicInfo1 ul {
+      width:400px;
+      margin:0px auto 100px auto;
+      
+      list-style-type: none;
+    }
+    #basicInfo2{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      width: 85%;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 30px 10px 80px 10px;
+      margin-top: -200px;
+      height: fit-content;
+      
+    }
+    
+    #basicInfo2 ul {
+      justify-content: center;
+      align-items: center;
+      width:400px;
+      margin:0px auto  50px auto;
+      
+      list-style-type: none;
+    }
+    #problem1 {
+      padding-top: 110px;
+      width:400px;
+      
+      padding-right: 100px;
+      list-style-type: none;
+    }
+    .info1 {
+      padding: 0px 0px 0px 0px;
+      text-align: start;
+      font-weight:500;
+    }
+    .info2 {
+      padding: 0px 0px 0px 0px;
+      text-align: start;
+      
+    }
+    .info2 li{
+      margin-left: -90px;
+      width: 200px;
+      font-weight:200;
+    }
+    #skills a{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-left: 15%;
+      justify-content: flex-start;
+      text-decoration: none;
+    }
+    #skills a:hover{
+      cursor: pointer;
+    }
+    #skills a img{
+      background-color: white;
+      width: 70%;
+      transition: .6s;
+      height: 300px;
+      
+      filter: brightness(20%);
+      box-shadow: 30px 20px 30px 10px rgba(209, 209, 209, 0.466);
+    }
+    
+    #skills a img:active {
+      width: 30%;
+    }
+    #skills a img.active {
+      width: 30%;
+    }
+    
+    
+    #skills a span{
+      position: relative;
+      left:-300px;
+      margin-left: 50px;
+      width:200px;
+      color:white;
+      font-size: 30px;
+      font-weight: 700;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    #skills a div{
+      
+      margin-left:-200px;
+      width: 20%;
+      transition: .6s;
+      border-radius: 5px;
+      border: 1px solid black;
+      height:200px;
+      padding-top: 80px;
+    }
+    
+    #skills a div.active{
+     
+      margin-left:-200px;
+      width:60%;
+      
+    }
+    
   </style>
   <title>Bank Resume</title>
 
@@ -63,102 +226,156 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">About me</a>
+        <a class="nav-link" href="#c1">About me</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Skills</a>
+        <a class="nav-link" href="#s1">Skills</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Certificated</a>
+        <a class="nav-link" href="#c2">Certificated</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Work experience</a>
+        <a class="nav-link" href="#w1">Work experience</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="#c3">Contact</a>
       </li>
     </ul>
   </div>
-</nav>
+</nav>  
 
-<img id="headBG" style="width:1800px;margin-left:-10px auto;margin-top:-10px" src="Pic\background_edit.png">
+<img id="headBG" style="width:1396px;margin-left:-10px auto;margin-top:-10px" src="Pic\background_edit2.png">
 <img id="profilePic" src="Pic\Profile_Pic.jpg">
+<br id="c1">
+<br><br>
 
-<p>What is Lorem Ipsum?
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-  type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-  essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-  passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+<div id="headName">
+  <p>Natchapol Patamawisut</p>
+  <p>MachineLearning | AI | BlockChain | EdgeComputing | IOT | WebProgramming</p>
+</div>
 
-  Why do we use it?
-  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
-  layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-  using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
-  page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
-  sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-  purpose (injected humour and the like).
+<div id="contact">
+  <a href="https://www.facebook.com/natchapol.patamawisut"><img src="http://icons.iconarchive.com/icons/sicons/basic-round-social/512/facebook-icon.png"></a>
+  <a href="http://line.me/R/ti/p/~sparker1333"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/LINE_logo.svg/600px-LINE_logo.svg.png"></a>
+  <a href="https://www.linkedin.com/in/natchapol-patamawisut-3238ab191"><img src="https://mlsvc01-prod.s3.amazonaws.com/cfed4ef1201/f39fb893-cd15-4916-8158-561b0d3d166d.png"></a>
+</div>
 
+<div id="basicInfo1">
+<div id="basicInfo2">
+  <ul style="margin-left:10px;padding-right:40px">
+    <li style="font-size: 30px; font-weight:700">About</li>
+    <br><br>
+    <li>Hello! My name is Natchapol Patamawisut. I'm studying Computer Engineering at RC KMUTT. Learning and coding are my hobbies. I want to be AI specialist or ML engineer ,so now i'm learning software enginnering tools and ml algorithm.</li>
+  </ul>
+  <ul id="problem1">
+    <li style="font-size: 30px; font-weight:700">Basic Infomation</li>
+    <br><br>
+    <div style="display: grid;grid-template-columns:250px 250px;">
+      <ul class="info1" >
+        <li><p>AGE:</p></li>
+        <li><p>UNIVERSITY:</p></li>
+        <br>
+        <li><p>FACULTY:</p></li>
+        <br>
+        <li><p>GRADUATED YEAR:</p></li>
+        <li><p>LANGUAGE</p></li>
+      </ul>
+      <ul class="info2">
+        <li><p>20</p></li>
+        <li><p>King Mongkut's University of Technology Thonburi</p></li>
+        <li><p>Bachelor of Engineering, Computer Engineering</p></li>
+        <li><p>2022</p></li>
+        <li><p>English, Thai</p></li>
+      </ul>
+    </div>
+    </div>
+    
+  </ul>
+</div>
+<br id=s1>
+<br><br><br><br>
 
-  Where does it come from?
-  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-  literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College
-  in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through
-  the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections
-  1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
-  This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
-  "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+<div style="width:1000px;margin-left:auto;margin-right:auto">
+  <p style="font-size: 30px;font-weight:700">Skills</p>
+  <div id="skills">
+    <a>
+      <img src="https://today.lbl.gov/wp-content/uploads/sites/3/2018/05/data-science.png">
+      <span>Data Science</span>
+      <div id="data"><p>:</p></div>
+      
+    </a>
+    
+    <br><br>
+    <a>
+      <img src="https://i.ytimg.com/vi/VW7Gz8X6B5c/maxresdefault.jpg">
+      <span>IOT</span>
+      <div id="iot"><p>:</p></div>
+    </a>
+    <br><br>
+    <a>
+      <img src="https://cdn-images-1.medium.com/max/1024/0*Bq9czVoOSydbQUQ0">
+      <span>Python</span>
+      <div id="python"><p>:</p></div>
+    </a>
+    <br><br>
+    <a>
+      <img src="http://daystats.com/images/icons/database.png">
+      <span>Database</span>
+      <div id="database"><p>:</p></div>
+    </a>
+    <br><br>
+    <a>
+      <img src="https://www.seoclerk.com/pics/460696-1z0cfk1466847141.png">
+      <span>Web Programming</span>
+      <div id="webProgramming"><p>:</p></div>
+    </a>
+    <br><br>
+    <a>
+      <img src="http://blog.xebialabs.com/wp-content/uploads/2016/03/DevOps-cycle-PPT-COLOURS.png">
+      <span>Other</span>
+      <div id="other"><p>:</p></div>
+    </a>
+  </div>
+</div>
+<br id='c2'>
+<div style="margin-top: 100px;">
+  <span style="font-size: 30px;font-weight:700">Certificated</span>
+  <div style="width: 600px;border-radius:10%;box-shadow:10px 5px 20px 1px grey;border:1px solid white;margin-left:auto;margin-right:auto;margin-top:30px;height:400px">
+    <p style="margin-top: 150px;font-size:50px;color:rgb(167, 167, 167);text-shadow:10px 10px 10px grey">Coming Soon</p> 
+  </div>
+</div>
+<br id="w1">
+<div style="margin-top: 100px;">
+  
+  <span style="font-size: 30px;font-weight:700">Work Experiance</span>
+  
+  <div style="width: 600px;border-radius:10%;box-shadow:10px 5px 20px 1px grey;border:1px solid white;margin-left:auto;margin-right:auto;margin-top:30px;height:400px">
+    <p style="margin-top: 150px;font-size:50px;color:rgb(167, 167, 167);text-shadow:10px 10px 10px grey">Coming Soon</p> 
+  </div>
+</div>
+<br>
+<p id="c3" style="position: relative;;bottom:-950px;font-size:50px;font-weight:700">Contact</p>
+<div style="position: relative;background-color:rgba(240, 248, 255, 0.808);bottom:-950px;width:50%;margin-left:auto;margin-right:auto;padding:20px 0px 20px 0px">
+  
+  <div>
+    <h4>Address</h4>
+    <p>13/33 Mooban Nanthawan Karnjanapisek Rd. Bangpai  Bangkae Bangkok, 10160 </p>
+  </div>
+  <div>
+    <h4>Phone</h4>
+    <p>085-155-3544</p>
+  </div>
+  <div>
+    <h4>Email</h4>
+    <p>natchapol.pat@gmail.com</p>
+  </div>
+  <div>
+    <h4>Linkedin</h4>
+    <p>Natchapol Patamawisut </p>
+  </div>
+</div>
+<img style="margin-top:100px;width:1387px;margin-left:-5px" src="Pic/footer.jpg">
 
-  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and
-  1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied
-  by English versions from the 1914 translation by H. Rackham.
-
-  Where can I get some?
-  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
-  form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a
-  passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the
-  Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true
-  generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence
-  structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from
-  repetition, injected humour, or non-characteristic words etc.</p>
-<p>What is Lorem Ipsum?
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-  type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-  essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-  passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-  Why do we use it?
-  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
-  layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-  using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
-  page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
-  sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on
-  purpose (injected humour and the like).
-
-
-  Where does it come from?
-  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-  literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College
-  in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through
-  the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections
-  1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.
-  This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
-  "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and
-  1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied
-  by English versions from the 1914 translation by H. Rackham.
-
-  Where can I get some?
-  There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some
-  form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a
-  passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the
-  Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true
-  generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence
-  structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from
-  repetition, injected humour, or non-characteristic words etc.</p>
-<a href="#top" id="buttom">got top</a>
 <script>
   const htmlTag = document.querySelector('html');
   const bodyTag = document.querySelector('body');
@@ -174,8 +391,9 @@
 
   addEventListener('scroll', () => {
     let headHeight = document.getElementById('headBG').clientWidth;
-    let screenSize = innerWidth*0.048;
-
+    let headWidth = document.getElementById('headBG').clientHeight;
+    let screenSize = innerWidth * 0.008;
+    console.log(headHeight,scrolled())
     myNav[0].style.setProperty('background', scrolled() > screenSize ? "var(--color2)" : "var(--color1)", "important");
     myHeadA.style.setProperty('color', scrolled() > screenSize ? "var(--color3)" : "var(--color2)", "important");
     myHeadB.forEach(i => i.style.setProperty('color', scrolled() > screenSize ? "var(--color3)" : "var(--color2)", "important"));
@@ -190,6 +408,30 @@
     }
     hoverHead.appendChild(style);
   })
+
+  let data = "Data manipulation,   Data modelling,  Data pipeline,  Data visualization ";
+  let iot = "DAQ programming, C, Assembly(ARMs), LabView ";
+  let python = "pandas, numpy, sklearn, GUI( tkinter, kivy), seaborn, matplotlib, tensorflow ";
+  let database = "DB2, MySQL, MSSQL ";
+  let webProgramming = "Html, Css, Javascript,React Native";
+  let other = "Git, Docker, MatLab";
+  $('#skills a').click(function(){
+    console.log(eval($(this).children('div').attr('id')));
+    $(this).children('img').toggleClass('active');
+    currentSkill = eval($(this).children('div').attr('id'));
+    if ($(this).children('div')[0].innerHTML == currentSkill){
+      $(this).children('div')[0].innerHTML = ":"
+      $(this).children('div').toggleClass('active');
+    }
+    else{
+      $(this).children('div').toggleClass('active');
+      $(this).children('div')[0].innerHTML = currentSkill;
+    }
+  
+  });
+    
+   
+    
 </script>
 
 </body>
