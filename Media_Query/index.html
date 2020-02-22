@@ -12,7 +12,7 @@
             justify-content: center;
             text-align: center;
             font-family: 'Montserrat', sans-serif;
-            
+
         }
 
         #headIMG {
@@ -27,62 +27,252 @@
             top: -400px;
 
         }
-
+        #headText span{
+            font-weight:900;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        #headText span span{
+            font-weight:100;
+        }
         form {
-            
+
             position: relative;
             top: -350px;
-            border-color:white;
-           
+            border-color: white;
+
         }
-        fieldset{
-            
+
+        fieldset {
+
             margin-left: auto;
             margin-right: auto;
             width: 80%;
             background-color: white;
             border-radius: 30px;
-            border:none;
+            border: none;
             box-shadow: 10px 10px 1000px 5px rgba(129, 129, 129, 0.541);
-            
+
         }
-        
-       fieldset div div{
-        display: flex;
-        flex-direction: column;
-        width:400px;
-        margin: 0px 5px 0px 5px;
-       }
-       input{
-           height: 40px;
-           border-radius: 10px;
-           border: 1px solid rgba(128, 128, 128, 0.418);
-       }
-       textarea{
-        border-radius: 10px;
-        border: 1px solid rgba(128, 128, 128, 0.418);
-       }
+
+        fieldset div div {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            margin: 0px 5px 0px 5px;
+        }
+
+        input {
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid rgba(128, 128, 128, 0.418);
+        }
+
+        textarea {
+            border-radius: 10px;
+            border: 1px solid rgba(128, 128, 128, 0.418);
+        }
+
+        #context {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            list-style-type: none;
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        ul li {
+            text-align: start;
+        }
+
+        h2 {
+            color: red;
+        }
+        legend{
+            font-size:50px;
+        }
+        #pc{
+            font-size: 80px;
+            margin-top:-200px;
+        }
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            #context {
+                display: grid;
+                grid-template-columns: 40% 40%;
+                list-style-type: none;
+                text-align: center;
+                justify-content: center;
+    
+            }
+            legend{
+                font-size: 40px;
+            }
+            form {
+
+                position: relative;
+                top: -200px;
+                border-color: white;
+    
+            }
+            #headText {
+                position: relative;
+                font-size: 50px;
+                color: white;
+                top: -220px;
+    
+            }
+            #headText span{
+                font-weight:700;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #headText span span{
+                font-weight:100;
+            }
+            #pc{
+                font-size: 80px;
+                margin-top:-100px;
+            }
+        }
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+            #headIMG {
+                width: 435px;
+                overflow: hidden;
+            }
+            #context {
+                display: grid;
+                grid-template-columns: 50%;
+                list-style-type: none;
+                text-align: center;
+                justify-content: center;
+    
+            }
+            legend{
+                font-size: 30px;
+            }
+            form {
+
+                position: relative;
+                top: -50px;
+                border-color: white;
+    
+            }
+            #headText {
+                position: relative;
+                font-size: 20px;
+                color: white;
+                top: -110px;
+                margin-left: 80px;
+                
+            }
+            #headText span{
+                font-weight:700;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #headText span span{
+                font-weight:100;
+            }
+            #pc{
+                font-size: 80px;
+                margin-top:0px;
+                margin-left: 50px;
+            }
+        }
+
     </style>
 </head>
 
 <body>
     <img id="headIMG" src="Pic\brown-paper-texture-background-53.jpg">
     <div id="headText">
-        <span style="font-weight:900;font-family:Arial, Helvetica, sans-serif">BankForm &#9786;<br /><span
-                style="font-weight:100;">Media Query test</span></span>
+        <span>BankForm &#9786;<br />
+        <span>Media Query test</span></span>
     </div>
     <form action="next.html">
         <fieldset>
-            <legend style="font-size:50px">Enter the form <span style="color:red">Now!</span></legend>
-            <div style="display: flex;flex-direction: row;width:80%;flex-wrap:wrap;justify-content:center;text-align:start;width:100%">
-                <div><p>Your Name (required)</p><input name="Name" value="" required></div>
-                <div><p>Your Email (required)</p><input name="Email" value="" required></div>
-                <div style="width:73%;"><p>Subject</p><input name="Subject" value=""></div>
-                <div style="width:73%;margin-bottom:30px"><p>Your Message</p><textarea rows="10" name="Message" value=""></textarea></div>
+            <legend >Enter the form <span style="color:red">Now!</span></legend>
+            <div
+                style="display: flex;flex-direction: row;width:80%;flex-wrap:wrap;justify-content:center;text-align:start;width:100%">
+                <div>
+                    <p>Your Name (required)</p><input name="Name" value="" required>
+                </div>
+                <div>
+                    <p>Your Email (required)</p><input name="Email" value="" required>
+                </div>
+                <div style="width:73%;">
+                    <p>Subject</p><input name="Subject" value="">
+                </div>
+                <div style="width:73%;margin-bottom:30px">
+                    <p>Your Message</p><textarea rows="10" name="Message" value=""></textarea>
+                </div>
             </div>
-            <input type="submit" name="Submit" value="SUBMIT"> 
+            <input type="submit" name="Submit" value="SUBMIT">
         </fieldset>
     </form>
+    <p id="pc">pimclick content</p>
+    <ul id="context">
+        <li style="text-align: start;">
+            <h2>Digital Strategy</h2>
+            <span>Business Intelligence<br>
+                SEO – Search Engine Optimization<br>
+                SEM streategy<br>
+                Digital Content<br>
+                Branding Design<br>
+                UX & UI Design<br>
+                Product Prototype</span>
+        </li>
+        <li style="text-align: start;">
+            <h2>Digital
+                Production</h2>
+            <span>WebSites & Microsites<br>
+                Responsive Design / Development<br>
+                Mobile APP & Games<br>
+                Intranet & Extranet<br>
+                Virtual & Augmented Reality<br>
+                Interactive Installations</span>
+        </li>
+        <li style="text-align: start;">
+            <h2>E-Marketing</h2>
+            <span>BCampaigns management<br>
+                Market research<br>
+                User analysis<br>
+                Brand activation<br>
+                E-Commerce Development<br>
+                Social Media strategy and<br>
+                optimisation<br>
+                Advocacy & Influencer</span>
+        </li>
+        <li style="text-align: start;">
+            <h2>Graphic Design</h2>
+            <span>Creative Art direction<br>
+                Branding & Identity<br>
+                3D modeling / Animation<br>
+                UI/UX design<br>
+                Prints & Signaletics<br>
+                Visual storytelling<br>
+                Layouting & Infographics<br>
+                Typography</span>
+        </li>
+        <li style="text-align: start;">
+            <h2>Video
+                Production</h2>
+            <span>Campaigns management<br>
+                Scripting / Story Boarding<br>
+                Filming<br>
+                Editing/Grading<br>
+                Motion Design<br>
+                Sound design</span>
+        </li>
+        <li style="text-align: start;">
+            <h2>Digital Strategy</h2>
+            <span>Business Intelligence<br>
+                SEO – Search Engine Optimization<br>
+                SEM streategy<br>
+                Digital Content<br>
+                Branding Design<br>
+                UX & UI Design<br>
+                Product Prototype</span>
+        </li>
+    </ul>
 </body>
 
 </html>
