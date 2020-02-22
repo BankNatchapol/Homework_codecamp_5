@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Media Query</title>
+    <style>
+        body {
+            margin: 0;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            
+        }
+
+        #headIMG {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        #headText {
+            position: relative;
+            font-size: 100px;
+            color: white;
+            top: -400px;
+
+        }
+
+        form {
+            
+            position: relative;
+            top: -350px;
+            border-color:white;
+           
+        }
+        fieldset{
+            
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            background-color: white;
+            border-radius: 30px;
+            border:none;
+            box-shadow: 10px 10px 1000px 5px rgba(129, 129, 129, 0.541);
+            
+        }
+        
+       fieldset div div{
+        display: flex;
+        flex-direction: column;
+        width:400px;
+        margin: 0px 5px 0px 5px;
+       }
+       input{
+           height: 40px;
+           border-radius: 10px;
+           border: 1px solid rgba(128, 128, 128, 0.418);
+       }
+       textarea{
+        border-radius: 10px;
+        border: 1px solid rgba(128, 128, 128, 0.418);
+       }
+    </style>
+</head>
+
+<body>
+    <img id="headIMG" src="Pic\brown-paper-texture-background-53.jpg">
+    <div id="headText">
+        <span style="font-weight:900;font-family:Arial, Helvetica, sans-serif">BankForm &#9786;<br /><span
+                style="font-weight:100;">Media Query test</span></span>
+    </div>
+    <form action="next.html">
+        <fieldset>
+            <legend style="font-size:50px">Enter the form <span style="color:red">Now!</span></legend>
+            <div style="display: flex;flex-direction: row;width:80%;flex-wrap:wrap;justify-content:center;text-align:start;width:100%">
+                <div><p>Your Name (required)</p><input name="Name" value="" required></div>
+                <div><p>Your Email (required)</p><input name="Email" value="" required></div>
+                <div style="width:73%;"><p>Subject</p><input name="Subject" value=""></div>
+                <div style="width:73%;margin-bottom:30px"><p>Your Message</p><textarea rows="10" name="Message" value=""></textarea></div>
+            </div>
+            <input type="submit" name="Submit" value="SUBMIT"> 
+        </fieldset>
+    </form>
+</body>
+
+</html>
