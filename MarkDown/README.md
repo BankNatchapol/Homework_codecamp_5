@@ -1,4 +1,4 @@
-#test markdown  
+#h1 test markdown  
 [go to my facebook](https://www.facebook.com/natchapol.patamawisut)  
 ---  
 ###My personal Info  
@@ -7,12 +7,12 @@
 -**Age**  
     -*20*  
 ---  
-###Sample Block  
+###h3 Sample Block  
 >go in  
 >> go go  
 >>> go go go
 >>>> go go go go
->>> out 1  
+>>> out 1
 >>out 2  
   
 ---
