@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animation {
+            animation-name: de;
+            animation-direction: alternate;
+            animation-iteration-count: 2;
+            animation-duration: 10s;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            text-align: center;
+            animation-timing-function: cubic-bezier(0.1,0.5,0.2,0.2);
+            
+        }
+        @keyframes zoom{
+            from{
+                color: black ;
+                background-color: white;
+                width:100px;
+                border:1px solid red;
+                position: relative;
+                visibility: hidden;
+            }
+            to{
+                color:white;
+                background-color: black;
+                width:300px;
+                border:10px solid blue;
+                position: relative;
+                top:200px;
+                visibility: visible;
+            }
+        }
+        @keyframes de {
+            0%{
+                background-color: red;
+            }
+            
+            20%{
+                background-color: rgb(255, 255, 255);
+            }
+            
+            40%{
+                background-color: rgb(183, 0, 255);
+            }
+            
+            60%{
+                background-color: rgb(208, 255, 0);
+            }
+            
+            80%{
+                background-color: rgb(62, 48, 185);
+            }
+            
+            100%{
+                background-color: rgb(255, 255, 255);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: red;"><div class="animation">HI</div></div>
+    
+</body>
+</html>

@@ -1,3 +1,3 @@
-This is Repository for submit CodeCamp 5 Home work <br/>
-Natchapol Patamawisut<br/>
-natchapol.pat@gmail.com
+1.CodeCamp5 online<br/>
+2.ณัชพล ปัทมวิสุทธิ์<br/>
+3.Repo สำหรับส่งการบ้าน ตั้งแต่ precamp 
