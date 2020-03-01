@@ -1,9 +1,6 @@
 test1  
-<<<<<<< HEAD
 
 test2  
 
 test3  
 
-=======
->>>>>>> add conflict 1
