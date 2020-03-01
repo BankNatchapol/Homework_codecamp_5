@@ -1,0 +1,4 @@
+Git conflict  
+git not conflict no.1  
+<!-- comment -->  
+<!-- comment 2-->  
