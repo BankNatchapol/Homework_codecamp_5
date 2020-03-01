@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .carousel {
+            background-color: rgb(155, 177, 175);
+
+        }
+
+        .carousel-inner {
+            margin-left: auto;
+            margin-right: auto;
+            height: 500px;
+            width: 500px
+        }
+
+        .row {
+            text-align: center;
+            justify-content: center;
+        }
+
+        .row div {
+            
+            background-color: rgba(172, 172, 172, 0);
+            
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card{
+            text-align: center;
+            justify-content: center;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        .card img{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            width: 200px;
+            height: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <a class="navbar-brand" href="#"><span class="fas fa-cogs"></span>&ensp;BANK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" style="border-color: white;color:white"
+                    type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.hellomyweb.com/media/course/html.png.500x500_q85_crop.png" class="d-block w-100"
+                    alt="html" style="width:500px;height: 500px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 style="color: black;">HTML</h5>
+                        <p>HTML by Natchapol Patamawisut</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.htmlstudio.co.uk/wp-content/uploads/2015/03/logo_CSS3.png" class="d-block w-100"
+                    alt="css" style="padding:10px 50px 30px 50px;width:500px;height: 500px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 style="color: black;">CSS</h5>
+                        <p>CSS by Natchapol Patamawisut</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://lh3.googleusercontent.com/proxy/Yd2mBPYXaFw3-5eyy88SMG9mY9ldKYu9dQIQ9TrSMJvc3YcS4Ally2RimxX7doxV32qdhyU9hJfTsZBNUGKxhJM8oCa3DqGjDb9SIN69Ui_uyoZiGpG5F5y8nru_9JjPHFqlxzM2lBKpIK1ZDdB-Bx1aKTPwb8d6nZA2TtnMjJ0WmxlDhfNws7Gz-2ID"
+                    class="d-block w-100" alt="JS" style="padding:30px 90px 30px 90px;height:500px;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4 style="color: black;">JavaScrpit</h5>
+                        <p>JavaScrpit by Natchapol Patamawisut</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-10 col-sm-5 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png" class="card-img-top" alt="HTML">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML</h5>
+                        <p class="card-text">Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+                        <a href="https://en.wikipedia.org/wiki/HTML" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-sm-5 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/225px-CSS3_logo_and_wordmark.svg.png" class="card-img-top" alt="CSS">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS</h5>
+                        <p class="card-text">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+                        <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-sm-5 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.w3schools.com/whatis/img_js.png" class="card-img-top" alt="JavaScript">
+                    <div class="card-body">
+                        <h5 class="card-title">JS</h5>
+                        <p class="card-text">JavaScript (/ˈdʒɑːvəˌskrɪpt/),[6] often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[7] JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+                        <a href="https://en.wikipedia.org/wiki/JavaScript" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-sm-5 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/225px-Git-logo.svg.png" class="card-img-top" alt="Git">
+                    <div class="card-body">
+                        <h5 class="card-title">Git</h5>
+                        <p class="card-text">Git (/ɡɪt/)[7] is a distributed version-control system for tracking changes in source code during software development.[8] It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed,[9] data integrity,[10] and support for distributed, non-linear workflows.[11]</p>
+                        <a href="https://en.wikipedia.org/wiki/Git" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-sm-5 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="data:image/png;base64,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" class="card-img-top" alt="Docker">
+                    <div class="card-body">
+                        <h5 class="card-title">Docker</h5>
+                        <p class="card-text">Docker is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, </p>
+                        <a href="https://opensource.com/resources/what-docker" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-sm-5 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/330px-Bootstrap_logo.svg.png" class="card-img-top" alt="Boostrap">
+                    <div class="card-body">
+                        <h5 class="card-title">Boostrap</h5>
+                        <p class="card-text">Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.</p>
+                        <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-sm-5 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/JQuery_logo.svg/330px-JQuery_logo.svg.png" class="card-img-top" alt="jQuery">
+                    <div class="card-body">
+                        <h5 class="card-title">jQuery</h5>
+                        <p class="card-text">jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.[2] It is free, open-source software using the permissive MIT License.[3] As of May 2019, jQuery is used by 73% of the 10 million most popular websites.[4] Web analysis indicates that it is the most widely deployed JavaScript library by a large margin, having 3 to 4 times more usage than any other JavaScript library.[4][5]</p>
+                        <a href="https://en.wikipedia.org/wiki/JQuery" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-sm-5 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.w3schools.com/whatis/img_ajax.jpg" class="card-img-top" alt="Ajax">
+                    <div class="card-body">
+                        <h5 class="card-title">Ajax</h5>
+                        <p class="card-text">Ajax (also AJAX /ˈeɪdʒæks/; short for "Asynchronous JavaScript and XML")[1][2] is a set of web development techniques using many web technologies on the client side to create asynchronous web applications. </p>
+                        <a href="https://en.wikipedia.org/wiki/Ajax_(programming)" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 col-sm-5 col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/330px-Kubernetes_logo_without_workmark.svg.png" class="card-img-top" alt="Kubernetes">
+                    <div class="card-body">
+                        <h5 class="card-title">Kubernetes</h5>
+                        <p class="card-text">Kubernetes (commonly stylized as k8s[4]) is an open-source container-orchestration system for automating application deployment, scaling, and management.[5] It was originally designed by Google, and is now maintained by the Cloud Native Computing Foundation. </p>
+                        <a href="https://en.wikipedia.org/wiki/Kubernetes" class="btn btn-primary">Learn more</a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</body>
+
+</html>
