@@ -1,0 +1,6 @@
+git conflict  
+conflict no.1  
+conflict no.2  
+conflict no.3  
+
+
