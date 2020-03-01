@@ -3,3 +3,5 @@ this is test text
 add commit this for git branch feature-3  
 
 add test to add commit 2  
+
+add text add line 7  
