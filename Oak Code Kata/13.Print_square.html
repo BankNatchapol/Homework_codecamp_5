@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Print the squares of the numbers 1 - 20. Each number should be on a separate line, next to it the number 2 superscripted, an equal sign and the result. (Example: 102 = 100) -->
+    <div id="div1">
+
+    </div>
+    <script>
+        
+        for (let i=1;i<21;i++){
+            var para = document.createElement("p");
+            var sup = document.createElement("sup");
+            var number = document.createTextNode(`${i}`);
+            var upper = document.createTextNode("2");
+            var square = document.createTextNode(` = ${i*i}`);
+            sup.appendChild(upper);
+            para.appendChild(number);
+            para.appendChild(sup);
+            para.appendChild(square);
+            var element = document.getElementById("div1");
+            element.appendChild(para);
+            
+        }
+        
+    </script>
+        
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Prints 10 names with a line break between each name. The list should be alphabetized, and to do this place a subscripted number next to each name based on where it will go in the alphabetized list. (Example: Alan1). Print first, the unalphabetized list with a subscript number next to each name, then the alphabetized list. Both lists should have an <h1> level heading. -->
+    <div id="div1">
+        <h1>Unalphabetized list</h1>
+        <br>
+    </div>
+    <br>
+    <div id="div2">
+        <h1>Alphabetized list</h1>
+        <br>
+    </div>
+    <script>
+        function show(names,x){
+            for (let i=0;i<names.length;i++){
+                var para = document.createElement("p");
+                var sub = document.createElement("sub");
+                var namea = document.createTextNode(names[i]);
+                
+                var lower = document.createTextNode(`${sortedNames.indexOf(names[i])+1}`);
+                console.log(typeof(lower),typeof(namea))
+                sub.appendChild(lower);
+                para.appendChild(namea);
+                para.appendChild(sub);
+                var element = document.getElementById(`div${x}`);
+                element.appendChild(para);
+                
+            }
+        }
+        let names = ["Bill","Roger","Sandra","Stacy","William","Thomas","Wendy","Jane","Andy","Anna"];
+        let sortedNames = ["Bill","Roger","Sandra","Stacy","William","Thomas","Wendy","Jane","Andy","Anna"];
+        sortedNames.sort();
+        show(names,1);
+        show(sortedNames,2);
+        
+    </script>   
+</body>
+</html>

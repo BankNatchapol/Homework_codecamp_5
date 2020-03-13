@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <!-- Create a webpage that prints any text of your choosing to the screen, do not include a head section in the code. -->
+    <h3>Show this text: <input id="x" type="text"><button onclick="changeText()">submit</button></h3>
+    <span id="y">-</span>
+    <script>
+        function changeText(){
+            let data = document.getElementById("x").value;
+            document.getElementById("y").innerHTML = data;
+        }
+    </script>
+</body>
+</html>
