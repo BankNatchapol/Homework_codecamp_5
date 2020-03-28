@@ -1,6 +1,6 @@
-let ask = (question,yes,no) => confirm(question)? yes():no();
+let ask = (question, yes, no) => confirm(question) ? yes() : no();
 ask(
     "Do you agree?",
-    function(){alert("You agreed.");},
-    function(){alert("You cancel.");}
+    function () { alert("You agreed."); },
+    function () { alert("You cancel."); }
 )
