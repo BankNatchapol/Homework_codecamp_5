@@ -1,5 +1,3 @@
 1.CodeCamp 5 online<br/>
 2.ณัชพล ปัทมวิสุทธิ์<br/>
-3.การบ้าน Day8 Object 1,2,3
-
-
+3.แบบฝึกหัด Day10 Advance JavaScript Map, Set
